@@ -1,11 +1,11 @@
 {
-  "name": "kbotify-template",
+  "name": "kook-arisa",
   "version": "0.0.1",
-  "description": "Starter kit for kBotify bots",
+  "description": "Arisa Bot",
   "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --nolazy -r ts-node/register -r tsconfig-paths/register src/index.ts"
+    "start": "node --nolazy -r ts-node/register -r tsconfig-paths/register src/index.ts",
+    "pm2": "pm2 start pm2-windows.js"
   },
   "repository": {
     "type": "git",
@@ -16,14 +16,19 @@
     "kaiheila",
     "bot"
   ],
-  "author": "FlappyIce",
+  "author": "potatopotat0",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fi6/kbotify-template/issues"
+    "url": "https://github.com/fi6/kook-arisa/issues"
   },
-  "homepage": "https://github.com/fi6/kbotify-template#readme",
+  "homepage": "https://github.com/fi6/kook-arisa#readme",
   "dependencies": {
-    "kbotify": "^0.2.5"
+    "@types/sharp": "^0.30.4",
+    "axios": "^0.27.2",
+    "form-data": "^4.0.0",
+    "kbotify": "^0.2.5",
+    "sharp": "^0.30.7",
+    "upath": "^2.0.1"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.28.4",
@@ -33,6 +38,7 @@
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-no-null": "^1.0.2",
     "eslint-plugin-prettier": "^3.4.0",
+    "ts-node": "^10.9.1",
     "tsconfig-paths": "^3.10.1",
     "typescript": "^4.3.5"
   }
